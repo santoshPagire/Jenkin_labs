@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages{
+        stage("Example"){
+            steps{
+                echo "Bulid number: ${env.BUILD_NUMBER}"
+                  
+            }
+        }
+    }
+}
